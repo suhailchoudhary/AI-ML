@@ -8,6 +8,18 @@ The dataset is collected from the kaggle :
 == https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification/data ==
 
 
+Understand the directory:
+Project->templates('index.html','result.html') \
+        ->Src('eye_vgg19.h5') \
+        ->static(css('bootstrap.css') \
+                      images \ 
+                      js('bootstrap.bundle.js') \
+                      uploads)\
+                      
+
+
+
+
 ## Cataract: 
 ![_4_1244424](https://github.com/user-attachments/assets/d499886c-2887-4cb1-8b12-27d90dc91b62)
 
