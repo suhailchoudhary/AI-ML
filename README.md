@@ -8,13 +8,13 @@ The dataset is collected from the kaggle :
 == https://www.kaggle.com/datasets/gunavenkatdoddi/eye-diseases-classification/data ==
 
 
-Understand the directory:
+Understand the directory: \
 Project->templates('index.html','result.html') \
         ->Src('eye_vgg19.h5') \
-        ->static(css('bootstrap.css') \
+        ->static->''css('bootstrap.css') \
                       images \ 
                       js('bootstrap.bundle.js') \
-                      uploads)\
+                      uploads '' \
                       
 
 
