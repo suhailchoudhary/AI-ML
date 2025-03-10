@@ -31,7 +31,7 @@ def prepare_image(img_path):
 def index():
     return render_template("index.html",)
 @app.route('/result', methods=["GET", "POST"])
-def result():
+def result1():
     result = None
     filename = None
 
@@ -63,7 +63,7 @@ def result():
             confidence = np.max(preds)
 
             result = {"prediction": formatted_class, "confidence": float(confidence)}
-    return render_template("result.html",  result=result, filename=filename)
+    return render_template("result1.html",  result=result, filename=filename)
 
 
 if __name__ == "__main__":
