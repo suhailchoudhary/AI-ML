@@ -3,7 +3,7 @@ import numpy as np
 from flask import Flask, request, render_template, url_for
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-from tensorflow.keras.applications.vgg16 import preprocess_input
+from tensorflow.keras.applications.vgg19 import preprocess_input
 
 app = Flask(__name__)
 
