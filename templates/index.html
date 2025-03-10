@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Disease Detection</title>
+    <style>
+        body {
+            font-family: "Playfair Display", serif !important;
+            
+        }
+        .header{
+            height: 50px;
+            width: 100%;
+        }
+        .container {
+            max-width: px;
+            margin: auto;
+        }
+    
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    
+        .slider {
+            width: 100%;
+            height: 650px;
+            background-image: url("{{ url_for('static', filename='images/imageslider.jpg') }}");
+            background-repeat: no-repeat;
+            margin: 0;
+            background-size: cover;
+        }
+        #main-text{
+            font-size: 50px;
+            color: rgb(88, 99, 111);
+            font-family: "Playfair Display", cursive !important;
+            text-align: center;
+            margin: 0px 40px 10px 40px;
+            padding: 150px 150px 50px 150px;
+            line-height: 80px;
+
+        }
+
+        #buttons{
+            text-align: center;
+        }
+      
+        #text-model1{
+            
+            color: slategray;
+            box-shadow: 10px;
+        }
+        #try-it{
+           background-color: slategray;
+           border: 0;
+           
+        }
+        #know-more{
+            background-color: transparent;
+            border: 1px solid black;
+
+            color: slategray;
+        }
+        .footer{
+            background-color: white;
+            color: slategray !important;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.js') }}" rel="javascript"></script>
+
+</head>
+<body>
+    <div class="container-fluid ">
+      
+      
+        <!-- Navbar start -->
+         <div class="header">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#" style="font-family: palestra !important; color: gray;">EYE DISEASE & DIAGNOSIS</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                              <a class="nav-link active" aria-current="page" href="#" style="color: slategray !important;">Home</a>
+                              <a class="nav-link" href="https://www.dragarwal.com/blog/eye-wellness/the-complete-guide-to-eye-disorders-and-how-they-affect-your-vision" style="color: slategray !important;">Ocular Disease</a>
+                              <a class="nav-link" href="{{url_for('result1')}}" style="color: slategray !important;">Try</a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+
+         </div>
+       
+        <!-- navbar ends -->
+
+        <!-- instead of slider a div is gonna used -->
+
+        <div class="slider">
+           
+            <p id="main-text">Bridging technology and healthcare-AI-driven insights for better vision care</p>
+            <!-- <p id="slider-text">We are the AI driven for delivering the better healthcare for the human eyes.
+                <br>
+                Eye is a organ which bring the colorful world for an individual <br>
+                Your vision our responsibility.
+            </p> -->
+        <p id="buttons">
+            <a href="{{ url_for('result1') }}" class="d-inline-block">
+                <button id="try-it" class="btn btn-primary">Try it</button>
+            </a>
+        
+            <a href="{{ url_for('index') }}" class="d-inline-block">
+                <button id="know-more" class="btn btn-primary">Know more</button>
+            </a>
+        
+        </p>
+
+        </div>
+
+
+        <div class="footer">
+            <div class="row footer mt-0 py-2">
+                <div class="col-sm-12 text-center text-light">
+                  <h1 style="font-family: palestra !important; color: gray;">EYE DISEASE & DIAGNOSIS</h1>
+                  <h4 style="color: slategray;">About us</h4>
+                  <p style="color: slategray;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis velit enim qui.
+                     Soluta totam voluptas quas hic placeat veritatis aut ullam in quibusdam. 
+                     <br/>Facilis omnis modi quaerat eaque fugit eveniet.</p>
+                     <p style="color: slategray;">&copy; copyright 2024-2025 all right reserved, designed and developed by <i class="text-warning" style="color: rgb(36, 36, 36) !important;">Eye Disease & Diagnosis</i></p>
+                </div>
+              </div>
+        </div>
+
+        <!-- main image is ended -->
+        <!-- <h1 id="text-model1">Eye Disease Prediction</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <br><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if result %}
+            <hr>
+            {% if result.error %}
+                <p style="color: red;">{{ result.error }}</p>
+            {% else %}
+                <h2>Prediction Result</h2>
+                <p><strong>Predicted Disease:</strong> {{ result.prediction }}</p>
+                <p><strong>Confidence:</strong> {{ result.confidence | round(2) }}</p>
+                {% if filename %}
+                    <h3>Uploaded Image:</h3>
+                    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image">
+                {% endif %}
+            {% endif %}
+        {% endif %} -->
+    </div>
+</body>
+</html>
