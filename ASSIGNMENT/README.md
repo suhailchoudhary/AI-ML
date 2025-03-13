@@ -2,4 +2,4 @@
 SUHAIL - https://github.com/suhailchoudhary/AI-ML-Assignment \
 Tarun Singh Rawat - https://github.com/Coder-TarunRawat/AI-ML-Assignment \
 Srishti Gautam-https://github.com/Srishti-arch/AI-ML-assignment \
-Shweta Chaudhary- https://github.com/thshweta/-AI-ML-ASSIGNMENT
+Shweta Chaudhary- https://github.com/thshweta/-AI-ML-ASSIGNMENT-
