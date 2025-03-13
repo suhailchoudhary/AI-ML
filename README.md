@@ -12,7 +12,7 @@ Understand the directory: \
 Project │── templates │ ├── index.html │ ├── result.html │── src │ ├── eye_vgg19.h5 │── static │ ├── css │ │ ├── bootstrap.css │ ├── images │ ├── js │ │ ├── bootstrap.bundle.js │── uploads
                       
 
-demo link :  Demo: 
+demo link : \
 https://youtu.be/62PCVXzjlxU
 
 
